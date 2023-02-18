@@ -1,0 +1,28 @@
+{
+  "name": "to-do-app",
+  "version": "1.0.0",
+  "description": "Simple todo app with login and register page using express cookie sessions",
+  "main": "app.js",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "node app",
+    "dev": "nodemon app --ignore ./data-db",
+    "dev:debug": "DEBUG=*,-nodemon*,-send* npm run dev"
+  },
+  "keywords": [
+    "session",
+    "express",
+    "cookies",
+    "login",
+    "to-do-app"
+  ],
+  "author": "jalbertsr",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cookie-session": "^1.3.0",
+    "express": "^4.15.4",
+    "pug": "^2.0.0-rc.3",
+    "strftime": "^0.10.0"
+  }
+}

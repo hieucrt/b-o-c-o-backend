@@ -1,0 +1,15 @@
+
+
+extends ../layout
+block content
+    #container.row.col-md-offset-4.col-md-4
+      h1.projectNameDone Đăng Ký
+      form#toDoForm(accept-charset='UTF-8', role='form', action='/registry/', method='POST')
+        .col-md-11
+          label Email
+          input.input-sm.input-margin(name='email', placeholder='E-mail',type='email', autofocus)
+          label Mật Khẩu
+          input.input-sm.input-margin(name='password', placeholder='Password', type='password', value='')
+          a.unstyle(href='/login/')
+            p quay laị đăng nhập
+          button.login đăng ký
